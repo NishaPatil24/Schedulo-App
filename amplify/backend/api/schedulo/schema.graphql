@@ -1,0 +1,17 @@
+type Teacher @model {
+	id: ID!
+	teacherId: ID
+	name: String
+	dept: String
+	phone: String
+	status: String
+	lecture: String
+	roomNumber: String
+}
+
+type Status @model @key(name: "byTeacher", fields: ["teacherId"]) {
+	id: ID!
+	status: String!
+	teacherId: ID!
+	lecture: String!
+}

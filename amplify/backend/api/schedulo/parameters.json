@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "schedulo",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authschedulo32a4911c",
+      "Outputs.UserPoolId"
+    ]
+  }
+}
